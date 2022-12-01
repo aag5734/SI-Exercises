@@ -90,3 +90,28 @@ For static quantums, I’ll just assign some quantum to the first process in lin
 For dynamic quantums, have students take a random number of markers from the board. I will give the student with the greatest number of markers a better quantum than those who give less. 
 
 Hopefully this fun activity gives students a clearer view on what is (in my opinion) a more difficult subject.
+
+## Making Gantt Charts & Calculations
+
+Refer to the writeup above for instructions on how to create a gantt chart and how to calculate the average turnaround, arrival, and wait times.
+
+Given the following jobs:
+- A = 12, B = 4, C = 87
+- A = 1, B = 3, C = 1
+- A = 5, B = 4, C = 19
+
+Make the respective garnet charts and average times first using FIFO and then using SJF
+
+Note: This may take a while so only go through maybe the first two
+
+## Security Review & Video 
+
+Similar to our review on scheduling, I just wanna give a quick crash course on I/O security since we brushed up on it a little bit near the end of the lecture.
+
+Begin by asking the question of “why is security so important.” This is a pretty broad question with a number of different good answers, but the one I'm looking for should relate to the answer I provided above.
+
+Next, give them a visualization of buffer overflow to show them how you can access important data on the board.
+
+After we’re done, spend the rest of the ten minutes watching this cool video I found that explains what a buffer overflow is, how it can be used to access important data, and how to do it on your own:
+
+`https://youtu.be/1S0aBV-Waeo?t=469`
