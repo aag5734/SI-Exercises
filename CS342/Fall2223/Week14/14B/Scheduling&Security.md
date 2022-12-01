@@ -61,33 +61,23 @@ for scheduling.
         - **ANSWER: It overwrites whatever comes after it, this can be dangerous if it’s, say, right next to some passwords in memory**
 
 
-## Birds and Catching Up
-
-Use the first five minutes of the session to draw a few birds on the board. 
-
-It went well last time when I had one person in the session so I’m hoping that more students will show up so that the activity can be more fun. 
-
-Also spend this time just catching up with students.
-ie. Ask them about their progress on the project/homework, how they’re feeling about the final, etc.
-
-
 ## Scheduling Review
 
 Review the basics of scheduling processes, refer to the writeup above for major topics up until dynamic and static quantums
 
-To show how quantums and processes are done, I will act as the processor with the students acting as a process that wants to get executed.
+To show how quantums and processes are done, act as the processor with the students acting as a process that wants to get executed.
 
-I will assign each student with some random runtime (12, 4, 87, etc)
+Assign each student with some random runtime (12, 4, 87, etc)
 
-For starters, I’ll give them an example of a processor that takes in processes by FIFO (refer to writeup) by lining students up in a line
+For starters, Give them an example of a processor that takes in processes by FIFO (refer to writeup) by lining students up in a line
 
 Repeat this with SJF/SJN
 
 Now we want to demonstrate static and dynamic quantums. We’ll do this pretty similarly to the last demonstration.
 
-For static quantums, I’ll just assign some quantum to the first process in line. 
+For static quantums, assign some quantum to the first process in line. 
 
-For dynamic quantums, have students take a random number of markers from the board. I will give the student with the greatest number of markers a better quantum than those who give less. 
+For dynamic quantums, have students take a random number of markers from the board. Give the student with the greatest number of markers a better quantum than those who give less. 
 
 Hopefully this fun activity gives students a clearer view on what is (in my opinion) a more difficult subject.
 
@@ -106,12 +96,12 @@ Note: This may take a while so only go through maybe the first two
 
 ## Security Review & Video 
 
-Similar to our review on scheduling, I just wanna give a quick crash course on I/O security since we brushed up on it a little bit near the end of the lecture.
+Similar to our review on scheduling, give a quick crash course on I/O security since we brushed up on it a little bit near the end of the lecture.
 
-Begin by asking the question of “why is security so important.” This is a pretty broad question with a number of different good answers, but the one I'm looking for should relate to the answer I provided above.
+Begin by asking the question of “why is security so important.” This is a pretty broad question with a number of different good answers, but the one you should be looking for should relate to the answer I provided above.
 
 Next, give them a visualization of buffer overflow to show them how you can access important data on the board.
 
-After we’re done, spend the rest of the ten minutes watching this cool video I found that explains what a buffer overflow is, how it can be used to access important data, and how to do it on your own:
+After you're done, spend the rest of the ten minutes watching this cool video I found that explains what a buffer overflow is, how it can be used to access important data, and how to do it on your own:
 
 `https://youtu.be/1S0aBV-Waeo?t=469`
