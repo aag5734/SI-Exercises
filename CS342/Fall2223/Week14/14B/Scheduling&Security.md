@@ -14,7 +14,7 @@ for scheduling.
         - Jobs run in order of arrival
         - FIFO = First in first out   
         - Know how to make a ready queue, gannet chart, turnaround, response, waiting times
-            - (image goes here)
+            - ![Gantt Chart Example](/assets/GanttChartExample.png)
     - SJF/SJN
         - Shortest job first / shortest job next
         - Know the reason why we use it
