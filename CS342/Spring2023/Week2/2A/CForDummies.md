@@ -35,5 +35,7 @@ Using what we've learned, try to compile and run the programs on the whiteboard 
 It should look something similar to this:
 
 **gcc -std=c99 -Wall -Wextra -pedantic -ggdb -c file.c**
+
 **gcc file.c -o file.o**
+
 **./file args**
