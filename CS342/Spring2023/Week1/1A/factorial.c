@@ -7,10 +7,10 @@ int main(int argc, char * argv[]) {
         return 1;
     }
     int n = atoi(argv[1]);
-    int m = 0;
+    int m = n;
 
-    while (n >= 1) {
-        m += m * n;
+    while (n > 1) {
+        m *= (n - 1);
         n = n - 1;
     }
     printf("%d\n", m);
