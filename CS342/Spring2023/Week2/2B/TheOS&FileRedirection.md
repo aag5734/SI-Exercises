@@ -18,6 +18,8 @@ present in this week's homework assignment.
 - The stack = Where local memory is stored
 - How strings work in C
 
+## SESSION ACTIVITIES   
+
 
 ### Greetings and Translation
 Spend the first five minutes greeting people who didn’t show up to the first session.
