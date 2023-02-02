@@ -10,19 +10,18 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define n 60
 #define m 120
 #define k 5
 
-struct student {
-    char name[n];
+struct Student {
+    char * name;
     float grade;
-    char major[n];
+    char * major;
 };
 
 int main(int argc, char * argv[]) {
-    FILE * file = fopen(argv[1], "r");
-    struct student students[k];
+    FILE * file = fopen(argv[1], "r+");
+    struct Student students[k];
 
     char curr[m];
 
@@ -36,11 +35,8 @@ int main(int argc, char * argv[]) {
         grade = strtok(NULL, " ");
         major = strtok(NULL, " ");
 
-        struct student s = {name, atof((const) grade), major};
+        struct Student s = {name, atof(grade), major};
         students[i] = s;
-
-        printf("%s\n", name);
-        printf("%s\n", grade);
-        printf("%s\n", major);
+        i++;
     }
 }
