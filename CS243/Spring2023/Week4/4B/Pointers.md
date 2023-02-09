@@ -5,7 +5,7 @@ There'll be a lot of topics to cover this session. It should be pretty chill tho
 ## MAIN CONCEPTS
 
 - Process Lifecycle
-    - ![Processes](assets/processlifecycle.png)
+    - ![Processes](/assets/processlifecycle.png)
     - From Running to Ready
         - CPU caps the amount of time a process can run.
     - From Ready to Running
@@ -22,7 +22,7 @@ There'll be a lot of topics to cover this session. It should be pretty chill tho
             - OS chooses a physical address during execution, maps to a virtual address in the Heap, and can change it during execution.
     - Virtual Memory
         - 5 Components
-            - ![VirtualMemory](assets/virtualmemorydiagram.png)
+            - ![VirtualMemory](/assets/virtualmemorydiagram.png)
                 - **TEXT**
                 - **DATA**
                 - **BSS**
