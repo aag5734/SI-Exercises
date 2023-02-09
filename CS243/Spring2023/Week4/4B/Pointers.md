@@ -65,8 +65,8 @@ As the title suggests, spend around 10-ish minutes completing the life cycle dia
 
 Once they’re done with this, make a simple program that asks for some input. I was planning on making a program that did the sum of two numbers but you can really do whatever you want here. Go through the execution of this program and have students answer which state the process is in line by line.
 
-int main()
 {
+int main() {
     int a, b;
    
       printf("Enter first number: ");
@@ -79,6 +79,7 @@ int main()
             a , b);
    
     return 0;
+}
 }
 
 (Literally just got this from GeeksForGeeks)
