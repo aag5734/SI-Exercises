@@ -25,7 +25,7 @@ int main(int argc, char * argv[]) {
    */
    x = data;
    y = data + 1;
-   printf("%d\n", ((x++) == y));
+   printf("%d\n", ((++x) == y));
  
   /**
    * COMPARISON 4
