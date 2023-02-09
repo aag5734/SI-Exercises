@@ -1,43 +1,99 @@
-# Debugging 
+# Pointers, Memory, and Processes 
 
-This session will HEAVILY focus on the debugger. We'll also use the remaining time to work on the 
-struct program we started last session
+There'll be a lot of topics to cover this session. It should be pretty chill though.
 
 ## MAIN CONCEPTS
 
-- Conditionals
-- Loops
-- GDB Debugging
-    - How to run the debugger
-        - gdb -q program_name
-        - run arguments
-        - quit
-    - Commands
-        - ![GDB Commands](/assets/gdbcommands.png)
+- Process Lifecycle
+    - ![Processes](assets/processlifecycle.png)
+    - From Running to Ready
+        - CPU caps the amount of time a process can run.
+    - From Ready to Running
+        - The processor is chosen by the CPU and executes it. Typically, right after __new__ state. 
+
+- Virtual Memory vs Physical Memory
+    - VM is a subspace of PM
+    - When does the OS bind VM to the PM
+        - **COMPILE TIME**
+            - Compiler translates source to determine the VM at which some value will be located and loaded.
+        - **LOAD TIME**
+            - OS chooses an address when it loads the program into memory.
+        - **EXECUTION TIME**
+            - OS chooses a physical address during execution, maps to a virtual address in the Heap, and can change it during execution.
+    - Virtual Memory
+        - 5 Components
+            - ![VirtualMemory](assets/virtualmemorydiagram.png)
+                - **TEXT**
+                - **DATA**
+                - **BSS**
+                - **HEAP**
+                - **STACK**
+                
+- Pointers
+    - int * ptr;
+    - *ptr = 2;	OR	ptr = &var
+    - printf(“%d\n, *ptr)
+    - Aliasing
+        - Two pointers pointing to the same thing
 
 
 ## SESSION ACTIVITIES   
 
-### Study Guide Suggestions 
+### Birds 
 
-Spend the first few minutes of the session asking students about the study guide and if they have anything they’d like to add as a group.
-
-
-### Going over GDB Commands + What they do
-
-As the title suggests, have students list as many gdb commands they can remember on the board and individually explain what they do.
-
-Once 5 minutes have gone up, spend an additional 5 minutes to have them look up the remaining commands.
+Spend five minutes drawing birds on the whiteboard and just catching up with students. 
 
 
-### Debugging faulty.c
+### Process Life Cycle
 
-Using a buggy implementation of a program that is meant to compute the factorial of some number, go through the process of setting breakpoints and printing out values of variables with the help of the students in the section
+As the title suggests, spend around 10-ish minutes completing the life cycle diagram from lecture using a word bank.
+ 
+**WORD BANK:**
+- Ready
+- Terminated
+- New
+- Waiting
+- Running
+- Spawn
+- I/O Done
+- Doing I/O
+- Dispatch
+- Timeout
+- Acquire Memory
+- Exit
+- Release Resources
+
+Once they’re done with this, make a simple program that asks for some input. I was planning on making a program that did the sum of two numbers but you can really do whatever you want here. Go through the execution of this program and have students answer which state the process is in line by line.
+
+int main()
+{
+    int a, b;
+   
+      printf("Enter first number: ");
+      scanf("%d", &a);
+   
+      printf("Enter second number: ");
+      scanf("%d", &b);
+   
+      printf("A : %d \t B : %d" ,
+            a , b);
+   
+    return 0;
+}
+
+(Literally just got this from GeeksForGeeks)
 
 
-### Messing with Structs Cont.
+### Virtual vs Physical Memory
 
-If we have additional time, have them resume on the students.c program we did last session. If they finish, project their solutions to the screen.
+Start this section of the session by asking what the students remember about VM and PM, if anything at all. Have the knowledgeable students start us off by writing out a physical representation of how the PM relates to the VM. Once this is done, go further and have students answer the question: What are the five components to the VM. Once this is done, have a random students (preferably one who hasn’t gone up yet) to write out the different segments of the VM. If they get it wrong, have knowledgeable students make suggestions, but don’t have them write up the answer. 
+
+
+### Messing with Pointers
+
+Spend the remaining time just doing quick little activities involving pointers.
+
+Using pointer.c, students try to guess what each comparison in each code snippet returns. Run the program and try to have others explain where they went wrong.
 
 
 ### Study Guide
