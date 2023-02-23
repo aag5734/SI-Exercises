@@ -1,0 +1,54 @@
+# Valgrind and Dependencies
+
+Lots of stuff to be covered. Focus on Valgrind and dependencies.
+
+## MAIN CONCEPTS
+
+- Makefiles
+    - How to make a Makefile
+    - ![MakeFile](/assets/makefiletemp.png)
+- Dependencies
+    - ![DependencyExample](/assets/dependencies.png)
+- Valgrind
+    - How to spot specific errors
+    - How to fix them
+    - Valgrind cheat sheet
+- Function pointers
+    - How to make them
+        - void func (int x) {}
+        - void (*func_ptr)(int)  = &func;
+    - Using them
+        - (*func_ptr)(21) 
+
+
+
+## SESSION ACTIVITIES   
+
+### Exam Review Pt2
+
+Pick up where we left off from last time and finish going over the answers for the exam. If there are any newbies here, just quickly flip through the questions/answers we discussed in the previous session.
+
+
+### Dependencies and Makefiles
+
+Let’s say we have two c source files, main.c and node.c, and we want to link these two together. Begin this section by asking if there’s a better alternative to just relinking the same c files over and over again. After this, have a student or two go up to the board and write out the makefile template (refer to writeup above)
+
+Once this is done, have students draw out a dependency tree that represents main.c and node.c.
+Using the dependency tree that the students made, create a basic makefile that links these two files upon change to either main.c or node.c.
+
+
+### Valgrind
+
+Start this section by asking what each of the main valgrind errors are (X bytes in Y are lost, conditional jump, invalid read/write, and mismatched free) and what they entail.
+
+Next, go over the valgrind.c program I made and try having students guess what each block of code is doing wrong and what valgrind will tell us. Then, using valgrind, go back to the code and fix the issues. 
+ 
+
+### Function Pointers
+
+If we have time, quickly go over function pointers by giving them some function and having them a) create a function pointer out of it and b) using the function pointer to call the function.
+
+
+### Study Guide
+
+Add onto the study guide and answer any questions students may have.
