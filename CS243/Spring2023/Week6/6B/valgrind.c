@@ -1,3 +1,10 @@
+/**
+ * NAME: Abraham Gonzalez
+ * FILE: valgrind.c
+ * DATE: 02/23/2023
+ * DESC: A clearly buggy program used to decrypt valgrind's error messages
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
