@@ -5,8 +5,7 @@ the students. Feel free to do whatever you want though.
 
 ## MAIN CONCEPTS
 
-- There are none...
-    - ![Jumpscare](/assets/ghost-spooky.gif)
+![Jumpscare](/assets/ghost-spooky.gif)
 
 
 ## SESSION ACTIVITIES   
